@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunaal | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">My Portfolio</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Kunaal</h1>
+      <h1 class="role">A Full Stack Developer</h1>
+      <p>I build responsive websites and love clean code.</p>
+    </div>
+    <div class="hero-img">
+      <img src="kkk.jpeg" alt="Profile Picture" style="float: right;">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a student exploring HTML, CSS, and Python.
+      I enjoy building responsive websites and small projects that solve real problems.
+      Debugging and learning new design techniques keep me motivated every day.
+      My goal is to grow into a confident full-stack developer.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><i class="fab fa-html5"></i> HTML</div>
+      <div class="card"><i class="fab fa-css3-alt"></i> CSS</div>
+      <div class="card"><i class="fab fa-python"></i> Python</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Janswasthya.ai</h3>
+        <p>Ai driven access to government medical schemes and eliminatng paperwork.</p>
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Calorie Tracker</h3>
+        <p>A CLI app to help students track their daily calorie intake.</p>
+        <div class="project-tags">
+          <span>Pyhton</span>
+          <span>CLI</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <button id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script>
+    const backBtn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", function () {
+      if (document.documentElement.scrollTop > 200) {
+        backBtn.style.display = "block";
+      } else {
+        backBtn.style.display = "none";
+      }
+    });
+
+    backBtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+</body>
+</html>
